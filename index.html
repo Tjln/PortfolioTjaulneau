@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
+    
+</head>
+<body>
+    <nav class="menu">
+        <div class="inner">            
+            <div class="m-left">
+                <h1 class="logo">Portfolio</h1>
+            </div>
+            <div class="m-right">
+                    <a href="#" class="m-link"><i class="fa-solid fa-house"></i> Accueil</a>
+                    <a href="#" class="m-link"><i class="fa-solid fa-user"></i> Profil</a>
+                    <a href="#" class="m-link"><i class="fa-solid fa-phone"></i> Contact</a>
+            </div>
+            <img src="images/menu-btn.png" alt="menu-burger" class="menu-burger">
+        </div>            
+    </nav>
+    <section class="page-content">
+        <header>
+            <h1>Développeur web junior</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+                 adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue,
+                  euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat
+                  . Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat
+                   libero pharetra tempor. </p>
+        </header>
+
+        <section class="presentation-image">
+            <img src="images/1947484.jpg" alt="images">
+            <div class="text">
+                <h1>Timothé Jaulneau</h1><br>
+                <h2>Alternance Formation PHP/Symphony</h2>
+                <button onclick="window.open('https://www.linkedin.com/in/timoth%C3%A9-jaulneau-51636a233/', '_blank')">Qui suis-je?</button>
+            </div>
+        </section>
+        <section class="profil-section">
+            <h1>Profil</h1>
+            <div class="separation"></div>
+            <div class="wrapper">
+                <div class="wrapper-exp">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+                         adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, 
+                         euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. </p>
+                    <img src="images/0x0.jpg" alt="img">
+                </div>
+                <div class="wrapper-cv">
+                    <img src="images/Diapositive1.JPG" alt="CV">
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h1>Contact</h1>
+            <div class="separation"></div>
+                <div class="main-formulaire">
+                    <form action="get">
+                        <div class="form-nom-mail-phone">
+                            <div class="form-column">
+                                <label for="name"></label>
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" name="prenom" id="name" placeholder="Nom" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="mail"></label>
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" name="mail" id="mail" placeholder= "Mail" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="phone"></label>
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <div class="form-message">
+                            <label for="message"></label>
+                            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                            <i class="fa fa-message"></i>
+                        </div>
+                        <input type="submit" value="Envoyer" class="cta">
+                    </form>
+                </div>
+        </section>
+    </section>
+
+    
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-burger")
+        const navLinks = document.querySelector(".m-right")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
